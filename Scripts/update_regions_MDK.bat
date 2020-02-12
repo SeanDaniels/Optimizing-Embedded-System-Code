@@ -1,4 +1,4 @@
 @echo off
-set PATH=%PATH%;..\Tools\GetRegions\
+set PATH=%PATH%;Source\Profiler
 @echo on
-GetRegions.exe %1 -c -s -oSource\Profiler\region.c
+GetRegions.exe %1 -c -s -o Source\Profiler\region.c

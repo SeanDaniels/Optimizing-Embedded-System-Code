@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>MKL25Z128xxx4</Device>
           <Vendor>NXP</Vendor>
-          <PackID>Keil.Kinetis_KLxx_DFP.1.13.0</PackID>
+          <PackID>Keil.Kinetis_KLxx_DFP.1.15.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x1FFFF000,0x00004000) IROM(0x00000000,0x00020000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -80,9 +80,9 @@
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
           <AfterMake>
-            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>Scripts\update_regions_MDK.bat !L</UserProg1Name>
+            <UserProg1Name>"C:\Users\seanw\OneDrive - North Carolina State University\Classes\Current\ECE 561\Labs\Lab-Two\Code\Optimizing-Embedded-System-Code\Scripts\update_regions_MDK.bat"</UserProg1Name>
             <UserProg2Name>Scripts\find_sizes.bat !L</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -616,7 +616,7 @@
       <file attr="config" category="source" condition="Compiler ARMCC" name="Device\Source\ARM\startup_MKL25Z4.s" version="2.5.0">
         <instance index="0">RTE\Device\MKL25Z128xxx4\startup_MKL25Z4.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.5.0" condition="MKL25Z4 CMSIS"/>
-        <package name="Kinetis_KLxx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.13.0"/>
+        <package name="Kinetis_KLxx_DFP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.15.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
@@ -624,7 +624,7 @@
       <file attr="config" category="source" name="Device\Source\system_MKL25Z4.c" version="2.5.0">
         <instance index="0">RTE\Device\MKL25Z128xxx4\system_MKL25Z4.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.5.0" condition="MKL25Z4 CMSIS"/>
-        <package name="Kinetis_KLxx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.13.0"/>
+        <package name="Kinetis_KLxx_DFP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.15.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
@@ -632,7 +632,7 @@
       <file attr="config" category="header" name="Device\Source\system_MKL25Z4.h" version="2.5.0">
         <instance index="0">RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.5.0" condition="MKL25Z4 CMSIS"/>
-        <package name="Kinetis_KLxx_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.13.0"/>
+        <package name="Kinetis_KLxx_DFP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.15.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
