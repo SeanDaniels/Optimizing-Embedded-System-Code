@@ -59,7 +59,9 @@ int main(void) {
 	Control_RGB_LEDs(1, 0, 1);		// Magenta: running
 	for (r = 0; r < NUM_TESTS; r++) {
 		read_xyz();
+		Enable_Profiling();
 		convert_xyz_to_roll_pitch();
+		Disable_Profiling();
 	}
 	Control_RGB_LEDs(0, 0, 1);		// Blue: done
 	Sort_Profile_Regions();
